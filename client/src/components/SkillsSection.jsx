@@ -7,7 +7,7 @@ const SkillsSection = () => {
   const {copy} = useContext(AppContext)
 
   return (
-    <div id='skills' className='scroll-mt-35 w-full bg-(--color-primary) mb-24 flex flex-col gap-5 items-center py-20 lg:px-50 xl:px-100 md:px-20 px-5
+    <div id='skills' className='scroll-mt-35 w-full bg-(--color-primary) mb-23 flex flex-col gap-5 items-center py-20 lg:px-50 xl:px-100 md:px-20 px-5
     shadow-(--shadow-gradient)'>
       <h1 className='font-bold text-3xl text-white'>{copy.skills.title}</h1>
       <p className='text-white text-lg mb-5 text-center'>

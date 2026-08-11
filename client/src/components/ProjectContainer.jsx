@@ -6,7 +6,7 @@ const ProjectContainer = ({image, name, desc, ref, visitLabel = 'Visit the websi
     <div className="lg:w-130 h-100 w-80 flex flex-col rounded-3xl 
         transition-all duration-300 hover:scale-105 hover:shadow-xl bg-contain shadow-lg"
         style={{backgroundImage: `url(${image})`}}>
-      <div className='bg-white mt-auto p-5 rounded-b-3xl'>
+      <div className='bg-white mt-auto p-5 rounded-b-3xl border-t border-(--color-primary)'>
         <h2 className='font-bold text-xl mb-2'>{name}</h2>
         <p className='mb-3'>{desc}</p>
         {ref && <span className='text-(--color-primary) underline'><a href={ref}>{visitLabel}</a></span>}
