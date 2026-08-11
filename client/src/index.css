@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: rgb(14, 87, 121);
+    --color-primary-light: oklch(
+        from var(--color-primary)
+        calc(l + 0.15)
+        calc(c * 1.5)
+        h
+    );
+    --color-primary-dark: oklch(
+        from var(--color-primary)
+        calc(l - 0.2)
+        calc(c * 0.85)
+        h
+    );
+    --color-secondary: rgb(230, 96, 96);
+
+    --gradient-color-1: color-mix(
+        in srgb,
+        var(--color-primary) 85%,
+        var(--color-secondary) 15%
+    );
+
+    --gradient-color-2: color-mix(
+        in srgb,
+        var(--color-primary) 65%,
+        var(--color-secondary) 35%
+    );
+
+    --gradient-color-3: color-mix(
+        in srgb,
+        var(--color-primary) 40%,
+        var(--color-secondary) 60%
+    );
+
+    --gradient-color-4: color-mix(
+        in srgb,
+        var(--color-primary) 15%,
+        var(--color-secondary) 85%
+    );
+
+    --shadow-gradient:
+        0 12px 0 12px var(--gradient-color-1),
+        0 24px 0 24px var(--gradient-color-2),
+        0 36px 0 36px var(--gradient-color-3),
+        0 48px 0 48px var(--gradient-color-4);
+}
