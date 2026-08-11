@@ -8,7 +8,7 @@ const Navbar = () => {
     const {toggleSidebar, toggleLanguage, language, copy} = useContext(AppContext)
 
   return (
-    <div className="bg-white flex justify-between lg:grid lg:grid-cols-[1fr_1fr_1fr] py-4 z-10 sticky top-0 w-full shadow-lg">
+    <div className="bg-white flex justify-between lg:grid lg:grid-cols-[1fr_1.5fr_1fr] py-4 z-10 sticky top-0 w-full shadow-lg">
         <div className='flex gap-3 items-center ml-5 cursor-pointer w-fit pr-10' onClick={() => document.getElementById("about")?.scrollIntoView()}>
             <img src={assets.logo} alt="brand logo" className='w-15 mx-5 my-3'/>
             <span className="text-2xl text-nowrap">Leho Webdev</span>

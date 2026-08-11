@@ -7,7 +7,7 @@ const Footer = () => {
   const {copy} = useContext(AppContext)
 
   return (
-    <div className='flex flex-col bg-(--color-primary-dark) pt-30 pb-5 px-10 gap-10'>
+    <div className='flex flex-col bg-(--color-primary-dark) pt-30 pb-5 px-5 sm:px-10 gap-10'>
       <div className='sm:grid sm:grid-cols-2 flex flex-col gap-5'>
         <div className='flex flex-col gap-3'>
             <h1 className='text-white font-bold text-3xl'>Leho Webdev</h1>
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className='border-white/30' />
-      <div className='sm:grid sm:grid-cols-3 px-30 flex flex-col gap-3'>
+      <div className='sm:grid sm:grid-cols-3 flex flex-col gap-3 px-0 sm:px-10 lg:px-30'>
         <div className='flex flex-col gap-1 sm:items-start items-center'>
             <button className='hover:font-bold hover:underline cursor-pointer text-white text-lg'
           onClick={() => document.getElementById("about")?.scrollIntoView()}>{copy.footer.about}</button>
