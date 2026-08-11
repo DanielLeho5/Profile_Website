@@ -11,7 +11,7 @@ app.use(cors())
 
 const router = express.Router()
 app.use(
-    router.post("/mail", async (req, res) => {
+    router.post("/api/mail", async (req, res) => {
         try {
             const {name, email, phone, text} = req.body || {}
             if (!name || !email || !text) {return res.status(400).json({success: false, message: "Name, email and text are mandatory!"})}
