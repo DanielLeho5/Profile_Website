@@ -9,7 +9,7 @@ const PORT = process.env.PORT
 app.use(express.json())
 app.use(cors())
 
-app.post("/api/mail", async (req, res) => {
+app.post("/mail", async (req, res) => {
     try {
         const {name, email, phone, text} = req.body || {}
         if (!name || !email || !text) {return res.status(400).json({success: false, message: "Name, email and text are mandatory!"})}
