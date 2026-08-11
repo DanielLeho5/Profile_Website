@@ -9,7 +9,6 @@ const PORT = process.env.PORT
 app.use(express.json())
 app.use(cors())
 
-const router = express.Router()
 app.post("/api/mail", async (req, res) => {
     try {
         const {name, email, phone, text} = req.body || {}
