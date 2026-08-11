@@ -13,6 +13,7 @@ const mailOptions = (to, subject, text) => {
     return {
         from: process.env.SENDER_EMAIL,
         to,
+        replyTo: to,
         subject,
         text
     }
